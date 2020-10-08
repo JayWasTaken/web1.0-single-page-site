@@ -5,6 +5,7 @@ body {
     line-height: 1.5;
     font-family: 'Electrolize';
     font-size: 1.5em;
+    display: flex;
 }
 .font-color {
     color: #a59aff;
@@ -12,22 +13,22 @@ body {
     font-style: italic;
 }
 
-nav, main > section {
+main > section {
     overflow: auto;
 }
-
-main > section, main > footer {
+/* this one is a problem, makes contact us fat n shit */
+main > section {
     min-height: 100vh;
 }
-
-/* Style the nav bar */
+/* this has a scroll bar for some fuckin reason, probably the overflow and min height above */
 #nav {
+    display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 1em;
+    padding: .5em;
     background-color: #1d1818;
     color: #a59aff;
-    display: flex;
+    /* overflow: hidden; */
 }
 nav h2, ul {
     margin: 0
@@ -53,25 +54,21 @@ nav ul a:hover {
     background-image: url(/images/beat-saber-gameplay.png);
     background-size: cover;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     font-size: 4em;
     color: #a59aff;
 }
 #intro > div {
-    position: relative;
-    left: -400px;
-    top: -280px;
-    align-items: flex-start;
+
     background-color: #1d1818;
     opacity: 90%;
     line-height: 1.3em;
     border-radius: 2em 0;
-    
+    margin: .5em;
 }
 #intro h2, #intro p {
     margin: 0;
-    text-shadow: 0 0 8px #000000;
+    text-shadow: 0 0 8px #000;
     padding-right: 1em;
 }
 #intro p {
@@ -104,7 +101,6 @@ nav ul a:hover {
     width: 100%;
     height: 230px;
 }
-
 .card h3 {
     font-size: 2em;
 }
@@ -125,11 +121,12 @@ nav ul a:hover {
     padding: 1em;
     width: 75%;
     max-width: 800px;
+    text-align: center;
 }
 #headset  h2 {
     font-size: 4em;
-    margin: 0 0 1rem 0;
     text-align: center;
+    margin: 0;
 }
 
 #accessories {
@@ -148,7 +145,7 @@ nav ul a:hover {
     margin: 0 0 1rem 0;
 }
 #accessories h2 {
-    font-size: 2em;
+    font-size: 3em;
 }
 #accessories > div > div:nth-child(1) {
     flex: 3;
@@ -159,7 +156,8 @@ nav ul a:hover {
 }
 #accessories > div img {
     width: 100%;
-    box-shadow:0 0 22px rgba(0, 0, 0, 0.44);
+    box-shadow:0 0 22px #000;
+    
 }
 
 #contact {
