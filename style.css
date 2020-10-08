@@ -51,7 +51,7 @@ nav ul a:hover {
 
 #intro {
     background-color: #242327;
-    background-image: url(/images/beat-saber-gameplay.png);
+    background-image: url("images/beat-saber-gameplay.png");
     background-size: cover;
     display: flex;
     align-items: flex-start;
@@ -59,7 +59,6 @@ nav ul a:hover {
     color: #a59aff;
 }
 #intro > div {
-
     background-color: #1d1818;
     opacity: 90%;
     line-height: 1.3em;
