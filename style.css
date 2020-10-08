@@ -12,15 +12,11 @@ body {
     font-weight: 200;
     font-style: italic;
 }
-
-main > section {
-    overflow: auto;
-}
-/* this one is a problem, makes contact us fat n shit */
 main > section {
     min-height: 100vh;
+    overflow: auto;
 }
-/* this has a scroll bar for some fuckin reason, probably the overflow and min height above */
+
 #nav {
     display: flex;
     justify-content: space-between;
@@ -28,7 +24,6 @@ main > section {
     padding: .5em;
     background-color: #1d1818;
     color: #a59aff;
-    /* overflow: hidden; */
 }
 nav h2, ul {
     margin: 0
@@ -109,17 +104,14 @@ nav ul a:hover {
 }
 
 #headset {
-    background-color: #1d1818;
-    background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin: 0;
 }
 #headset > div {
     color: #a59aff;
-    padding: 1em;
-    width: 75%;
-    max-width: 800px;
+    padding: 3em;
+    width: 100%;
     text-align: center;
 }
 #headset  h2 {
@@ -137,8 +129,8 @@ nav ul a:hover {
 #accessories > div {
     display: flex;
     justify-content: center;
-    width: 75%;
-    margin: auto;
+    width: 100%;
+    margin: 3em;
 }
 #accessories h2, #accessories p {
     margin: 0 0 1rem 0;
@@ -156,7 +148,7 @@ nav ul a:hover {
 #accessories > div img {
     width: 100%;
     box-shadow:0 0 22px #000;
-    
+    margin: 5em 0 0 1em;
 }
 
 #contact {
